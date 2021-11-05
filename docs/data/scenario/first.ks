@@ -1,46 +1,97 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="メロンに生ハムはスイカに塩？"]
 [hidemenubutton]
 [wait time=200]
-[freeimage layer="base"]
+[bg storage=food_namahamu_melon.png time=500]
 
-「走るか寝るかするメロス」[l][r]
+「メロンに生ハム？？？」[l][r]
 
-メロスは激怒した。[l][r]
+スイカに塩は理解できる。　[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+それは、甘くないスイカを救う唯一無二の選択である。[l][r]
 
-(中略)[l][r]
+塩のおかげで引き立つ、夏の甘さである。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+ゴクリ.... [l][r]
+友人で試してみよう！！[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_melon] →メロンが好きな友人に試してもらう [endlink][r]
+[link target=*tag_hum] →生ハムが好きな友人に試してもらう [endlink][r]
 [s]
 
-*tag_sleep
+*tag_melon
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=melon.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+友人がいた。[1][r]
+
+[link target=*tag_onlymelon] →メロンだけあげてみる [endlink][r]
+[link target=*tag_humandmelon] →メロンに生ハムを載せてあげてみる [endlink][r]
+[s]
+
+
+*tag_onlymelon
+[cm]
+
+[bg storage=oishii2_man.png time=500]
+
+友人は笑顔でメロンをほおばった。[l][r]
+幸せなひと時！ [1][r]
+
+【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_humandmelon
+[cm]
+
+[bg storage=yurei_youngman1_smile.png time=500]
+
+[cm]
+友人は姿が変わってしまったようだ。[l][r]
+どうやら死因は僕のあげた生ハムメロン。[1][r]
+メロンが好きなだけではいけないようだ。[1][r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
 
-[bg storage=run.jpg time=500]
+*tag_hum
+[cm]
+
+[bg storage=food_namahamu.png time=500]
+ちょうどいいとことろに生ハムと友人が！[l][r]
+
+[link target=*tag_onlyhum] →生ハムだけあげてみる [endlink][r]
+[link target=*tag_humandmelon] →生ハムをメロンに載せてあげてみる [endlink][r]
+[s]
+
+*tag_onlyhum
+[bg storage=oishii2_man.png time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+友人は笑顔で生ハムをほおばった。[l][r]
+「赤ワインも欲しいなぁ！」だって [1][r]
+欲張りなやつだなぁ(笑)[1][r]
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_humandmelon
+[cm]
+
+[bg storage=yurei_youngman1_smile.png time=500]
+
+
+友人は姿が変わってしまったようだ。[l][r]
+どうやら死因は僕のあげた生ハムメロン。[1][r]
+生ハムが好きなだけではいけないようだ。[1][r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
